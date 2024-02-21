@@ -1,0 +1,234 @@
+*  {
+    /* font-family: serif; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+body{
+    font-family: Arial;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(0,51,102);
+    width: 100%;
+}
+header img {
+    margin: 1%;
+}
+header .hf{
+    float: right;
+    margin: 1.5%;
+}
+header .hi{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+    margin-top: 15%;
+}
+header .hi:hover{
+    background-color: #ccc;
+}
+
+
+table {
+    border-collapse: collapse;
+}
+tr{background-color: #fff;}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: rgb(0,51,102);
+    color: white;
+}
+table .btn{
+    background-color: #ec7115;
+    border: none;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 5%;
+}
+table .btn:hover{
+    background-color: #e3e3e3;
+    color: #ec7115;
+}
+
+/* .button{
+    background-color: rgb(0,51,102);
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #fff;
+    margin-top: 5%;
+    font-weight: bold;
+}
+.button:hover {
+    background-color: rgb(102,255,255);
+    color: #000;
+} */
+.cbtn{
+    background-color: #fff;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition-duration: 0.5s; 
+    padding: 8px 30px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+}
+.cbtn:hover{
+    background-color: #ccc;
+}
+
+form{
+	margin: 10%;
+}
+input[type=text], input[type=password]{	
+	width: 90%;
+	padding: 5px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+    border: 2px solid rgb(0,51,102);
+}
+textarea {
+	outline: none;
+	border: 2px solid #ccc;
+    width: 90%;
+}
+textarea:focus {
+	border: 2px solid rgb(0,51,102);
+}
+
+/* .container {
+	width: 55%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0 auto;
+} */
+
+.php-btn  {
+    color: blue;
+}
+
+#main_btn  {
+    margin-top:0;
+}
+
+#content1  {
+    margin-top: 100px;
+}
+
+#content1  p {
+    padding-top: 10px;
+}
+
+#content1 ul {
+    margin: 0%;
+    list-style: none;
+    display: inline-flex;
+}
+
+#content5 img  {
+    width: 40%;
+    height: 40%;
+    margin: 10px;
+  }
+
+  .quote-section {
+    text-align: center;
+    position: relative;
+    padding: 40px;
+    padding: 8em;
+    /* border: 1px solid #ccc;
+    border-radius: 5px; */
+    margin-top: 50px;
+  }
+  
+  .quote-text {
+    font-style: italic;
+    font-size: xx-large;
+    position: relative;
+    margin-bottom: 40px;
+  }
+  
+  .quote-text::before {
+    content: open-quote;
+    font-size: 4em;
+    position: absolute;
+    left: -45px;
+    top: -45px;
+    color: #888;
+  }
+  
+  .quote-text cite {
+      font-size: 15px;
+  }
+  
+  .author-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  
+  .author-image img {
+    width: 80px; /* Adjust as needed */
+    height: auto;
+    border-radius: 80%;
+  }
+
+#foot  {
+    margin-top: 59%;
+    background-color: rgb(10, 49, 100);
+}
+
+#foot_login, #foot_register {
+    background-color: rgb(10, 49, 100);
+}
+
+#login1  {
+    background-image: url(./img/Login_bg.jpg);
+    background-size: cover;
+  }
+  
+  #login1_inner1 {
+    padding: 6em;
+    color: white;
+    background-color: rgb(10, 49, 100);
+  }
+  
+  #login1_inner2  {
+    background-color: white;
+    color: black;
+  }
+
+  #login_inner2 form  {
+    padding: 6em;
+  }
+
+  input[type=submit], input[type=button]  {
+     color: white;
+     background-color: rgb(10, 49, 100);
+     padding: 8px;
+     border-radius: 5px;
+  }
+  
