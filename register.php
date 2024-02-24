@@ -135,7 +135,7 @@ function test_input($data){
         <div class="container">
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <a id="main_btn_nav" class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <strong>Courses</strong>
                 </a>
                 <div class="dropdown-menu bg-primary text-light" aria-labelledby="navbarDropdown">
@@ -151,20 +151,20 @@ function test_input($data){
                 </form>
               </div>
           <!-- <picture> -->
-            <a id="Heading" class="nav-link text-dark" href="#index.php"><img src="./img/logo.png" style="width: 30%; height: 30%;" alt="Logo"><strong>CreativByte</strong></a>
+            <a id="Heading" class="nav-link" href="index.php"><img src="./image/logo.png" style="width: 30%; height: 30%;" alt="Logo"><strong>CreativByte</strong></a>
           <!-- </picture> -->
           <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link text-primary px-4 smooth-scroll" href="#About"><strong>Get AI Guide</strong></a>
+                <a id="main_btn_nav" class="nav-link px-4" href="#About"><strong>Get AI Guide</strong></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-primary px-4 smooth-scroll" href="#About"><strong>Donate</strong></a>
+                <a id="main_btn_nav" class="nav-link px-4" href="#About"><strong>Donate</strong></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-primary px-4 smooth-scroll" href="#login.php"><strong>Log in</strong></a>
+                <a id="main_btn_nav" class="nav-link px-4" href="login.php"><strong>Log in</strong></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link text-primary px-4 smooth-scroll" href="#About"><strong>Sign Up</strong></a>
+                <a id="main_btn_nav" class="nav-link px-4" href="#About"><strong>Sign Up</strong></a>
             </li>
           </ul>
          </div>
@@ -184,7 +184,7 @@ function test_input($data){
                 </div>
                 <div id="login1_inner2" class="col-md-5">
                     <div class="container">
-                    <form method="post"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
+                    <form method="post" id="register_form"  action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                       Full Name:<br><input type="text" name="name">
                       <span class="error" style="color: red; font-size: 0.8em;"><?php echo $nameErr;?></span><br><br>
 
@@ -224,31 +224,30 @@ function test_input($data){
     </div>
 
 
-<footer id="foot_register" class="text-center text-white">
+    <footer id="foot_register" class="text-center text-white">
   <!-- Grid container -->
   <div class="container p-4">
     <!-- Section: Social media -->
-    <section class="mb-4">
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button" ><i class="fab fa-facebook-f"></i></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
-      <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="fab fa-github"></i></a>
+    <section class="mb-3 mt-1">
+      <a href="#" id="feet" class="fa fa-facebook"></a>
+      <a href="#" id="feet" class="fa fa-twitter"></a>
+      <a href="#" id="feet" class="fa fa-google"></a>
+      <a href="#" id="feet" class="fa fa-linkedin"></a>
+      <a href="#" id="feet" class="fa fa-youtube"></a>
+      <a href="#" id="feet" class="fa fa-instagram"></a>
+      <a href="#" id="feet" class="fa fa-pinterest"></a>
+      <a href="#" id="feet" class="fa fa-snapchat-ghost"></a>
+      <a href="#" id="feet" class="fa fa-skype"></a>
     </section>
     <!-- Section: Social media -->
 
     <!-- Section: Form -->
-    <p class="pt-2">
-        <strong>Sign up for our newsletter</strong>
-      </p>
+    <div class="container py-2 ">
+        <strong>Join our Community</strong>
+  </div>
     <!-- Section: Text -->
     <section class="mb-4">
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
-        repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
-        eum harum corrupti dicta, aliquam sequi voluptate quas.
-      </p>
+      <p>We believe that dedication, hardwork and consistency are enough to achieve anything.</p>
     </section>
     <!-- Section: Text -->
 
@@ -256,20 +255,20 @@ function test_input($data){
     <section class="">
       <div class="row">
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
+          <h5 class="text-uppercase">Support</h5>
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="#!" class="text-white">Privacy Policy</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
+              <a href="#!" class="text-white">Terms of Service</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
+              <a href="#!" class="text-white">FAQ</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="text-white">Our Team</a>
             </li>
           </ul>
         </div>
@@ -277,20 +276,20 @@ function test_input($data){
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
+          <h5 class="text-uppercase">Careers</h5>
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="#!" class="text-white">Contact Us</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
+              <a href="#!" class="text-white">Our Team</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
+              <a href="#!" class="text-white">Partners/a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="text-white">Testimonials</a>
             </li>
           </ul>
         </div>
@@ -298,20 +297,20 @@ function test_input($data){
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
+          <h5 class="text-uppercase">Services</h5>
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="#!" class="text-white">Blog</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
+              <a href="#!" class="text-white">Products</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
+              <a href="#!" class="text-white">Shipping & Returns</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="text-white">Site Map</a>
             </li>
           </ul>
         </div>
@@ -319,20 +318,20 @@ function test_input($data){
 
         <!--Grid column-->
         <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
-          <h5 class="text-uppercase">Links</h5>
+          <h5 class="text-uppercase">Get Started</h5>
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">Link 1</a>
+              <a href="#!" class="text-white">Feedback</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 2</a>
+              <a href="#!" class="text-white">How It Works</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 3</a>
+              <a href="#!" class="text-white">Resources</a>
             </li>
             <li>
-              <a href="#!" class="text-white">Link 4</a>
+              <a href="#!" class="text-white">Community</a>
             </li>
           </ul>
         </div>
@@ -344,7 +343,6 @@ function test_input($data){
     <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
   </div>
 </footer>
-</div>
 
 
 
